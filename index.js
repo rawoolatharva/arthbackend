@@ -3,15 +3,15 @@ const express = require('express') //this syntax is usually used for common js
 const app = express()
 const port = 3000
 
-app.use('/', (req, res) => {
+app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.use('/login', (req, res) => {
+app.get('/login', (req, res) => {
   res.send('<h1>Please login at Chai aur Code</h1>')
 })
 
-app.use('/youtube', (req, res) => {
+app.get('/youtube', (req, res) => {
   res.send('<h2>Arth aur Code</h2>')
 })
 
